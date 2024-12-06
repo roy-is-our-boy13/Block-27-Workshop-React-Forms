@@ -1,0 +1,31 @@
+.mainHeader 
+{
+    background-color: #333; 
+    color: white;           
+    padding: 10px;          
+    text-align: center;     
+}
+.divBox
+{
+    background-color: #df1d1d; 
+    box-sizing: border-box;
+    border: solid #000000 5px;
+}
+body
+{ 
+    background-color: #df1dbf; 
+}
+.buttonStyle
+{
+    background-color: #7d21d2; 
+    color: white;           
+    padding: 5px;          
+    text-align: center;    
+}
+.buttonStyle2
+{
+    background-color: #21d247; 
+    color: white;           
+    padding: 5px;          
+    text-align: center;    
+}
