@@ -45,4 +45,15 @@ export default function SignUpForm({ setToken })
         <h2 className = "mainHeader">Sign Up</h2>
         {error && <p>{error}</p>}
         <form onSubmit={handleSubmit}>
-           
+              <label>
+                  Username:
+                  <input value={username} onChange={(e) => setUsername(e.target.value)}/><br />
+              </label>
+              <label>
+                  Password:
+                  <input type="password" value={password} onChange={(e) => setPassword(e.target.value)}/><br />
+              </label>
+              <button className = "buttonStyle">Submit</button>
+        </form>
+    </div>);
+}

@@ -33,4 +33,25 @@ export default function Authenticate({ token })
       );
       
       const result = await response.json();
-      setSuccessMessage(result.mes
+      setSuccessMessage(result.message);
+      console.log(result.message);
+
+      setUsername(result.data.username);
+      console.log(result.message.username);
+
+    } 
+    catch (error)
+    {
+      setError(error.message);
+    }
+  }
+
+  return (
+    <div className = "divBox">
+      <h2>Authenticate</h2>
+      {successMessage && <p>{successMessage}</p>}
+      {error && <p>{error}</p>}
+      <button className = "buttonStyle2" onClick={handleClick}>Authenticate Token!</button>
+    </div>
+  );
+}
